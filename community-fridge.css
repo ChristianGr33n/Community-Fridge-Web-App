@@ -1,0 +1,200 @@
+body{
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+div#mainDiv{
+    text-align: center;
+    
+}
+
+/* header for each page */
+.headers{
+    margin: 1em;
+    color: darkblue;
+    text-align: center;
+}
+
+
+.mainPage{
+    display: inline-block;
+    border-radius: 1em;
+    border: 2px solid;
+    border-color: black;
+    background-color: salmon;
+    padding: 2em;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;   
+    margin-top: 4em;  
+}
+
+/* hover effect for main page options */
+span.mainPage:hover{
+    transform: scale(1.05);
+}
+
+div#fridgeDiv{
+    text-align: center;
+}
+
+/* fridge options */
+div#fridge{
+    display: inline-block;
+    text-align: center;
+    background-color: salmon;
+    border-radius: 50%;
+    box-sizing: content-box;
+    height: 250px;
+    width: 250px;
+    margin: 1em;
+}
+
+/* hover effect for the three fridge options (in page 2) */
+div#fridge:hover{
+    background-color: white;
+}
+
+img#fridgeImage{
+    display: inline-block;
+    width: 100px;
+    padding-top: 3em;
+
+    
+}
+
+span.fridgeInfo {
+    display: block;
+    text-align: center;
+    font-size: small;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: white;
+}
+div#fridge:hover .fridgeInfo{
+    color: black;
+}
+
+/* menu icon to return to main menu */
+img.menuIcon{
+    position: absolute;
+    height:50px;
+    top:10px;
+    right: 10px;
+}
+img.menuIcon:hover{
+    transform: scale(1.1);
+}
+
+/* left column */
+div#leftColumn{
+    display: inline-block;
+    position: absolute;
+    padding: 1%;
+    margin-left: 2%;
+    background-color: rgb(255, 144, 132);
+    width: 20%;
+    min-height: 50%;
+    border-radius: 5%;
+    color: white;
+}
+
+/* middle column */
+div#midColumn{
+    display: inline-block;
+    position: absolute;
+    background-color: teal;
+    padding: 1%;
+    width: 50%;
+    min-height: 58%;
+    border-radius: 2%;
+    margin-left: 25%;
+    
+}
+
+/* mid column images (food images) */
+img.foodImages{
+    display: inline-block;
+    height: 100px;
+    grid-area: image;
+    
+}
+
+
+/* putting each food row from mid column into a grid */
+.foodName { grid-area: name; color: white}
+.foodQuantity { grid-area: quantity; color: white}
+.text { grid-area: text; color: white}
+.box { grid-area: box; background-color: white; text-align: center; margin-right: 3em;}
+.minus { grid-area: minus; width:25px;}
+.plus { grid-area: plus; width:25px;}
+/* rows of food options for the middle column */
+div#row{
+    display: grid;
+    grid-template-areas:
+    'image  name name name name name none none none none'
+    'image  quantity quantity quantity quantity quantity none none none none'
+    'image  text text plus box minus none none none none'
+    ;
+    grid-gap: 1%;
+    padding: 1%;
+    
+}
+
+/* left column elements/info*/
+#lColName { display: block; font-size:  200%; margin-bottom: 2%;}
+#lColAddress { display: block; }
+#lColPhone { display: block; margin-bottom: 2%;}
+#lColInside { position: static; background-color: maroon; border-radius: 5px; text-align: center; height: 50px; line-height: 50px;}
+#lColOutside { position: static; background-color: teal; border-radius: 5px; margin-bottom: 5%; height: 50px; }
+
+/* left column categories with their respective hover effect */
+#lColProduce { display: block; padding-top: 5%; padding-bottom: 5%;}
+#lColProduce:hover { background-color: white; color:black;}
+#lColDairy { display: block; padding-top: 5%; padding-bottom: 5%;}
+#lColDairy:hover {background-color: white; color:black;}
+#lColBakery { display: block; padding-top: 5%; padding-bottom: 5%;}
+#lColBakery:hover { background-color: white; color:black;}
+#lColFrozen { display: block; padding-top: 5%; padding-bottom: 5%;}
+#lColFrozen:hover { background-color: white; color:black; }
+#lColPantry { display: block; padding-top: 5%; padding-bottom: 5%;}
+#lColPantry:hover { background-color: white; color:black;}
+
+
+/* Right column */
+#rightColumn{
+    position: absolute;
+    display: inline-block;
+    margin-left: 78%;
+    background-color: rgb(173, 0, 0);
+    width: 15%;
+    min-height: 50%;
+    border-radius: 5%;
+    color: white;
+}
+
+#rightColText{ 
+    position: static;
+    display: block;
+    padding: 1%;
+    background-color: black;
+    width: 98%;
+    border-top-left-radius: 10%;    
+    border-top-right-radius: 10%;
+    text-align: center;
+    font-size: large;
+    
+}
+
+/* items added to the cart */
+.cartFoods{
+    display: block;
+    position: static;
+    padding: 1%;
+}
+
+
+
+

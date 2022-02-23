@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="community-fridge.css">
+        <title>Community Fridge</title>
+    </head>
+    <body onload="mainState()">
+        <!-- Each page is spereated into 3 divs "mainDiv", "fridgeDiv", and "cartMenu"  -->
+        <!-- most elements are added dynamically in the javascript file                 -->
+        
+        <div id="mainDiv">
+            <h1 id="main" class="headers">Community Fridge Management System</h1>
+            <span onclick="fridgeState()" class="mainPage">Pick up an item</span>
+            <span class="mainPage">Drop off an item</span>
+            <span class="mainPage">Search for an item</span>
+        </div>
+
+        <div id="fridgeDiv">
+            <h1 id="menu" class="headers" hidden="true">Available fridges</h1>
+            <div id="fridges">
+                
+            </div>
+            <img class="menuIcon" src="images/menu-icon.png" onclick="mainState()">
+        </div>
+
+        <div id="cartMenu">
+            <div id="static">
+                <img class="menuIcon" src="images/menu-icon.png" onclick="mainState()">
+            </div>
+            <div id="dynamic">
+                
+            </div>
+        </div>
+        
+        
+    </body>
+    <script type="text/javascript" src="js/comm-fridge-data.js" ></script>
+</html>
