@@ -7,10 +7,9 @@ The purpose of this code is to allow users to shop at select community fridges b
 
 files:
 index.html
-comm-fridge-data.js
-js/community-fridge.css
-images folder 
+js/comm-fridge-data.js
+community-fridge.css
+images/
 README.txt
-menu-icon.png
 
 run instruction: open the index.html file
